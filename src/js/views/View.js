@@ -4,7 +4,6 @@ export default class View {
   _data;
 
   render(data, render = true) {
-    Ÿ;
     if (!data || (Array.isArray(data) && data.length === 0))
       return this.renderError();
 
@@ -20,10 +19,11 @@ export default class View {
   update(data) {
     this._data = data;
     const newMarkup = this._generateMarkup();
+
     const newDOM = document.createRange().createContextualFragment(newMarkup);
     const newElements = Array.from(newDOM.querySelectorAll('*'));
-    // console.log(newElements);
     const curElements = Array.from(this._parentElement.querySelectorAll('*'));
+
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
 
