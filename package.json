@@ -6,6 +6,7 @@
   },
   "name": "forkify",
   "version": "1.0.0",
+  "default": "index.html",
   "description": "Recipe search engine",
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.3",
@@ -66,7 +67,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html "
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Slav Konovalov",
   "license": "ISC"
