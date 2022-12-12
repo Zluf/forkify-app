@@ -129,7 +129,7 @@ const controlAddRecipe = async function (newRecipe) {
 };
 
 const welcomeMsgConsole = function () {
-  console.log('Welcome to the application');
+  console.log('Welcome to the application!');
 };
 
 const init = function () {
